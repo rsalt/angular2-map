@@ -7,7 +7,7 @@ A2-Material Theam <a href="https://material.angular.io/">View</a>
 
 <br/>
 # Referance url
-<hr />
+
 A2-google Map <a href="https://angular-maps.com/">View</a>
 <br/>
 To Generate Google Map Api Key Referance <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key"></a>
