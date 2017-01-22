@@ -2,10 +2,12 @@
 
 <h3>Angular 2 Google Map Marker with Material Layout</h3>
 <br/>
+<strong><u>Referance url</u></strong>
+<br/><br/>
 A2-Material Theam <a href="https://material.angular.io/">View</a>
 <br/>
-<strong>Referance url</strong>
-<br/>
+
+
 A2-google Map <a href="https://angular-maps.com/">View</a>
 <br/>
 To Generate Google Map Api Key Referance <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key"></a>

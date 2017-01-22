@@ -1,0 +1,98 @@
+<div [class.dark-theme]="isDarkTheme">
+  <md-toolbar color="primary">
+    <span>
+      <md-icon class="icon-15">map</md-icon>
+     Agnaulr 2 Map
+    </span>
+    <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>more_vert</md-icon>
+    </button>
+  </md-toolbar>
+  <md-menu x-position="before" #menu="mdMenu">
+    <button md-menu-item (click)="openDialog()">Settings</button>
+    <button md-menu-item (click)="isDarkTheme=!isDarkTheme">Toggle theme</button>
+    <button md-menu-item>Help</button>
+  </md-menu>
+  <md-sidenav-layout>
+    <md-sidenav align="end" mode="side" #sidenav>
+      <md-tab-group>
+        <md-tab>
+          <template md-tab-label>Details</template>
+          <template md-tab-content>
+            <button md-raised-button (click)="sidenav.close()" color="accent">CLOSE</button>
+          </template>
+        </md-tab>
+        <md-tab>
+          <template md-tab-label>Feed</template>
+          <template md-tab-content></template>
+        </md-tab>
+      </md-tab-group>
+    </md-sidenav>
+  <md-grid-list cols="12" rowHeight="300">
+      <div class="map">
+        <sebm-google-map 
+            [latitude]="lat" 
+            [longitude]="lng"  
+            [zoom]="zoom" 
+            [disableDefaultUI]=false 
+            [zoomControl]="false" 
+            (mapClick)="mapClicked($event)"
+        >
+          <sebm-google-map-marker 
+              *ngFor="let m of markers;let i = index" 
+              (markerClick)="clickedMarker(m, i)"
+              [latitude]="m.lat" 
+              [longitude]="m.lng" 
+              [markerDraggable]="m.draggable" 
+              (dragEnd)="markerDragEnd(m, $event)
+            ">
+              <sebm-google-map-info-window>
+                <strong>{{m.name}}</strong>
+                   <br>
+                   <a class="delete" (click)="removeMarker(m)">Delete</a>
+              </sebm-google-map-info-window>     
+          </sebm-google-map-marker>
+      </sebm-google-map>
+      <br />
+      <md-card>
+                <form (submit)="addMarker()">
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <th>
+                  <h2>Add New Marker</h2>
+                </th>
+            </tr>
+            <tr>
+              <td>
+                <md-input-container class="example-full-width">
+                  <input md-input placeholder="Marker name" [(ngModel)]="markerName" name="markerName">
+                </md-input-container>
+              </td>
+              <td>
+                <md-input-container class="example-full-width">
+                  <input md-input placeholder="Latitude" [(ngModel)]="markerLat" name="markerLat">
+                </md-input-container>
+              </td> 
+              <td>
+                <md-input-container class="example-full-width">
+                  <input md-input placeholder="Longitude" [(ngModel)]="markerLng" name="markerLng">
+                </md-input-container>
+              </td> 
+              <td>
+                  <md-select placeholder="Marker draggable" [(ngModel)]="markerDraggable" name="markerDraggable">
+                    <md-option value="no">No</md-option>
+                    <md-option value="yes">Yes</md-option>
+                  </md-select>
+              </td>
+              <td>
+                <input type="submit" md-raised-button value="Map It!">
+              </td>
+          </tr>
+          </table>
+      </form>
+      </md-card>
+      </div>
+	  </md-grid-list>
+  </md-sidenav-layout>
+
+</div>
