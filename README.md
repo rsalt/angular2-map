@@ -1,4 +1,7 @@
 # Angular2- map
+<a href="https://angular-maps.com/">
+![logo](https://cloud.githubusercontent.com/assets/13706104/22183809/85c07066-e0ec-11e6-9ea4-f62ffea5ec45.png)
+</a>
 
 <h3>Angular 2 Google Map Location Marker with Material Layout</h3>
 <br/>
