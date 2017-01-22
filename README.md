@@ -4,9 +4,9 @@
 <br/>
 <p>Its a Prototype add Location Marker, take Name Latitude, laungitude and Draggable Marker.</p>
 A2-Material Theam <a href="https://material.angular.io/">View</a>
-<hr>
+
 <br/>
-<strong>Referance url</strong>
+# Referance url
 <hr />
 A2-google Map <a href="https://angular-maps.com/">View</a>
 <br/>
