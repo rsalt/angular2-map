@@ -6,15 +6,17 @@
 <h3>Angular 2 Google Map Location Marker with Material Layout</h3>
 <br/>
 <p>Its a Prototype add Location Marker, take Name Latitude, laungitude and Draggable Marker.</p>
-A2-Material Theam <a href="https://material.angular.io/">View</a>
-
 <br/>
 # Referance url
 
+<h3>Angular 2 Material Theam</h3>
+<br/>
+<p>A2-Material Theam <a href="https://material.angular.io/">View</a>
+<br/>
 A2-google Map <a href="https://angular-maps.com/">View</a>
 <br/>
-To Generate Google Map Api Key Referance <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key"></a>
-<br/><br/>
+Google Map Api Key Generate Regrance <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key">View</a><br>
+</p>
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
 ## Development server
