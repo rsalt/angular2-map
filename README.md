@@ -8,7 +8,7 @@ A2-Material Theam <a href="https://material.angular.io/">View</a>
 <br/>
 A2-google Map <a href="https://angular-maps.com/">View</a>
 <br/>
-Google Map Api Key Generate Regrance <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key"></a>
+Google Map Api Key Generate Regrance <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key">View</a><br>
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
 ## Development server
